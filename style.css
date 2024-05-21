@@ -1,0 +1,161 @@
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #adadad;
+    border-radius: 20px;
+    border: 1px solid #9d9d9d;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+
+  .loader {
+    border: 5px solid transparent;
+    border-radius: 50%;
+    border-top: 5px solid #765a9f;
+    width: 30px;
+    height: 30px;
+    -webkit-animation: spin 2s linear infinite;
+     animation: spin 2s linear infinite;
+  }
+
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+
+
+  .hoverNav{
+    font-weight: 600;
+    margin: 5px;
+    border-left: 2px solid grey;
+    transition: all 0.01s ease-in-out;
+    cursor: pointer;
+  }
+  .hoverNav:hover{
+    color: #2bb1da;
+  }
+  .f:hover{
+    color: #d6d6d6;
+  }
+  .Search-btn{
+    position:relative;
+    right: 0;
+    width: 60px;
+    height: 35px;
+    font-size: 16px;
+    background: #4781b5;
+    transition: all 0.25s ease-in-out;
+  }
+  .Search-btn:hover{
+    background-color: #4b75b9;
+  }
+  .Search-btn:active{
+    background-color: #29569f;
+  }
+  .okactive{
+    border-left: 2px solid #2bb1da;
+    color: #2bb1da;
+  }
+  .hidden{
+    display: none;
+  }
+  .detail-con{
+    border-radius: 5px;
+  }
+  .detail-con:hover{
+    background-color: rgb(222, 240, 255);
+    box-shadow: 0 2px 3px #29569f;
+  }
+
+  .flag{
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    margin: 0 10px 0 0;
+    border-radius: 10px;
+    font-size: 30px;
+    border: 1px solid grey;
+    display: flex;
+    justify-content: center;
+  }
+  .counName{
+    font-size: 20px;
+    color: #29569f;
+  }
+  .counDetails{
+    font-size: 16px;
+    margin-top: 5px;
+    color: #163464;
+  }
+  .special{
+    color: red;
+  }
+  .btn-custom{
+    width: 100px;
+    margin: 5px 0 0 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #163464;
+    border: 1px solid #163464;
+    color: aliceblue;
+    cursor: pointer;
+  }
+
+
+  @media screen and (max-width: 750px) {
+    .flag{
+      text-align: center;
+      width: 30px;
+      height: 30px;
+      margin: 0 8px 0 0;
+      border-radius: 8px;
+      font-size: 20px;
+      border: 1px solid grey;
+      display: flex;
+      justify-content: center;
+    }
+    .counName{
+      font-size: 17px;
+      color: #29569f;
+    }
+    .counDetails{
+      font-size: 13px;
+      color: #163464;
+    }
+    .table-style{
+      font-size: 12px;
+    }
+    .Search-btn{
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    .table-style{
+      font-size: 14px;
+    }
+  }
+
+
+  @media screen and (max-width: 500px) {
+    .table-style{
+      font-size: 10px;
+    }
+    
+  }

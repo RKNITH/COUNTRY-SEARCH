@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Search</title>
+
+    <meta name="description" content="A site to know all details about different countries.">
+
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+        integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-color: aliceblue; overflow:hidden;">
+    <!-- header -->
+
+    <!-- arrow -->
+    <div class="absolute left-0 top-4 z-10 ps-3 d-flex justify-content-start align-items-center ">
+        <div class="box bg-white border border-grey d-flex justify-content-center align-items-center rounded w-10 h-10 cursor-pointer"
+            id="toogle">
+            <i class="text-2xl fa-solid fa-angles-left" id="topArrow"></i>
+        </div>
+    </div>
+
+    <!-- // heading -->
+    <div class="absolute right-0 top-5 z-10 pe-3 d-flex justify-content-center align-items-center ">
+        <div class="box bg-white border border-grey d-flex justify-content-center align-items-center rounded w-12 h-8 cursor-pointer"
+            id="docs">
+            <p class="text-md">Docs</p>
+        </div>
+    </div>
+
+
+    <!-- //doc -->
+    <div class="row sticky border-bottom border-dark" style="background-color: #4781b5;">
+        <div class="col-12 d-flex justify-content-center py-1 px-5">
+            <p class="text-white text-xl d-flex align-items-center ">EXPLORE WORLD</p>
+        </div>
+    </div>
+
+
+    <!-- nav bar -->
+    <div class="row ">
+        <div class="sidebar z-10 fixed bottom-0 lg:left-0 -left-80 overflow-y-auto border-end border-dark"
+            style="width: 250px; top: 72px; background-color: #202e56;" id="nav1">
+            <div class="d-flex justify-content-center flex-column text-white">
+                <h3 class=" text-lg my-2 py-1 border-bottom" style="width: 237px;">Select searching type</h3>
+                <div class="col-12 px-2 py-1 hoverNav" style="width: 220px;" id="all">
+                    <p>Show all Countries</p>
+                </div>
+                <h3 class=" text-lg py-1 mb-2 border-bottom " style="width: 237px;">Search Countries by</h3>
+                <div class="col-12 px-2 py-1 hoverNav okactive" style="width: 220px;" id="name">
+                    <p>Countries by name</p>
+                </div>
+                <div class="col-12 px-2 py-1 hoverNav" style="width: 220px;" id="capital">
+                    <p>Countries by capital name</p>
+                </div>
+                <div class="col-12 px-2 py-1 hoverNav" style="width: 220px;" id="currency">
+                    <p>Countries by currency</p>
+                </div>
+                <div class="col-12 px-2 py-1 hoverNav" style="width: 220px;" id="lang">
+                    <p>Countries by language</p>
+                </div>
+                <div class="col-12 px-2 py-1 hoverNav" style="width: 220px;" id="region">
+                    <p>Countries by region</p>
+                </div>
+                <div class="col-12 px-2 py-1 hoverNav" style="width: 220px;" id="subregion">
+                    <p>Countries by sub-region</p>
+                </div>
+                <div class="col-12 mt-5 d-flex justify-content-center py-1" style="width: 220px;">
+                    <p>Copyright @Raviranjan</p>
+                </div>
+                <div class="col-12 px-4 d-flex justify-content-center py-1" style="width: 220px;">
+                    <a href="#" target="_blank"><i class="f fa-brands px-2 cursor-pointer text-2xl fa-linkedin"></i></a>
+                    <a href="#" target="_blank"><i
+                            class="f fa-brands px-2 text-2xl cursor-pointer fa-github-square"></i></a>
+                    <a href="#" target="_blank"><i class="f fa-solid px-2 text-2xl cursor-pointer fa-globe"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- nav bar2 -->
+    <div class="row">
+        <div class=" fixed bottom-0 lg:right-0 -right-80 overflow-y-auto border-start border-dark"
+            style="width: 200px; top: 72px; background-color: #202e56;z-index: 22;" id="nav2">
+            <div class="d-flex justify-content-center flex-column text-white">
+
+                <h3 class=" text-lg my-2" style="width: 175px;"> <i class="fa-solid fa-play"></i> Documentation</h3>
+
+                <div class="col-12 pt-3 text-md" style="width: 170px;">
+                    <p>Show all countries:</p>
+                </div>
+                <div class="col-12 text-sm " style="width: 170px;">
+                    <p>Using the show all option, users can browse all 250 countries at the same time.</p>
+                </div>
+
+                <div class="col-12 pt-3 text-md" style="width: 170px;">
+                    <p>Search by name:</p>
+                </div>
+                <div class="col-12 text-sm " style="width: 170px;">
+                    <p>Using this, users can search any country with its full / partial name.</p>
+                </div>
+
+                <div class="col-12 pt-3 text-md" style="width: 170px;">
+                    <p>Search by capital:</p>
+                </div>
+                <div class="col-12 text-sm " style="width: 170px;">
+                    <p>Using this, users can search for a country by its full / partial capital city name.</p>
+                </div>
+
+
+                <div class="col-12 pt-3 text-md" style="width: 170px;">
+                    <p>Show all currency:</p>
+                </div>
+                <div class="col-12 text-sm " style="width: 170px;">
+                    <p>Using this, the user can search the country by its full / partial used currency name.</p>
+                </div>
+
+                <div class="col-12 pt-3 text-md" style="width: 170px;">
+                    <p>Search by language:</p>
+                </div>
+                <div class="col-12 text-sm " style="width: 170px;">
+                    <p>Using this, users can search any country by its spoken language.</p>
+                </div>
+
+                <div class="col-12 pt-3 text-md" style="width: 170px;">
+                    <p>Search by region:</p>
+                </div>
+                <div class="col-12 text-sm " style="width: 170px;">
+                    <p>Using this, user can search country by its full / partial region or continent name.</p>
+                </div>
+
+                <div class="col-12 pt-3 text-md" style="width: 170px;">
+                    <p>Search by sub-region:</p>
+                </div>
+                <div class="col-12 text-sm " style="width: 170px;">
+                    <p>Using this, user can search country by its full / partial region or continent name.</p>
+                </div>
+
+                <div class="col-12 pt-5 text-md" style="width: 170px;">
+                    <p>Visit :</p>
+                </div>
+                <div class="col-12 text-sm " style="width: 170px;">
+                    <p><a href="https://restcountries.com/" target="_blank"> https://restcountries.com</a> for more
+                        details.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Main-con -->
+    <div class="row z-1 fixed p-2 right-0 left-0 lg:left-64 lg:right-52" style="top:72px; overflow-y: scroll;">
+        <div class="col-12 p-2 mt-3 mb-2 d-flex justify-content-center" style="height:50px;">
+            <div class="rounded border border-dark bg-dark text-white shadow cursor-pointer" style="overflow: hidden;"
+                id="searchCon">
+                <i class="p-2 fa-solid fa-magnifying-glass"></i>
+                <input class="text-lg pe-2 focus:outline-none bg-transparent" placeholder="Search name" type="text"
+                    id="searchItem">
+                <input class="Search-btn" type="button" value="Search" id="searchBtn">
+            </div>
+            <div class="absolute left-5">
+                <i class="fa-solid fa-arrow-left hidden text-2xl cursor-pointer" id="backArrow"></i>
+            </div>
+
+            <div class="absolute right-6 hidden" id="loading">
+                <div class="loader"></div>
+                <h1>Loading...</h1>
+            </div>
+
+        </div>
+
+        <div class="con p-4" style="height:80vh; overflow-y: scroll;" id="mainCon">
+
+        </div>
+    </div>
+
+
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
